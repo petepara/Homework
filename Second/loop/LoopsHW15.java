@@ -1,9 +1,7 @@
-package Homework2.loop;
-
-import java.util.Scanner;
+package homeworkJava.Second.loop;
 
 // добавить комменты
-public class loopsHW15 {
+public class LoopsHW15 {
     public static void main(String[] args) {
 
         for(int i = 1 ;i<=10;i++) {

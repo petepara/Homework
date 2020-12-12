@@ -1,9 +1,9 @@
-package homeworkJava;
+package homeworkJava.First;
 
 
 import java.util.Scanner;
 
-public class homework52 {
+public class Homework52 {
     public static void main(String[] args) {
 
         String nameVasya = "Вася";

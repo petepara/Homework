@@ -1,6 +1,6 @@
-package homeworkJava;
+package homeworkJava.First;
 
-public class homework11 {
+public class Homework11 {
     public static void main(String[] args) {
         int a = 42; // 00101010
         int b = 15; // 00001111

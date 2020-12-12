@@ -1,6 +1,6 @@
-package homeworkJava;
+package homeworkJava.First;
 
-public class homework12 {
+public class Homework12 {
     public static void main(String[] args) {
         byte a = (byte)0b11010110; // 00101010 = 11010101 = 11010110
         byte b = (byte)0b11110001; // 00001111 = 11110000 = 11110001

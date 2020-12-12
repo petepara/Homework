@@ -1,10 +1,10 @@
-package homeworkJava;
+package homeworkJava.First;
 
 
 import java.util.Objects;
 import java.util.Scanner;
 
-public class homework5byIlya {
+public class Homework5byIlya {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);

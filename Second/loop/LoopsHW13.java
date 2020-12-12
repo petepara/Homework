@@ -1,9 +1,9 @@
-package Homework2.loop;
+package homeworkJava.Second.loop;
 
 import java.util.Scanner;
 
 // добавить комменты
-public class loopsHW13 {
+public class LoopsHW13 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Input a number to elevate:");

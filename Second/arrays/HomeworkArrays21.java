@@ -1,15 +1,10 @@
-package Homework2.arrays;
+package homeworkJava.Second.arrays;
 
 import java.util.Scanner;
 
-public class HomeworkArrays221 {
+public class HomeworkArrays21 {
     public static void main(String[] args) {
-
-        int[] myArray = arrayFromConsole();
-        for (int i : myArray) {
-            System.out.println(i);
-
-        }
+        int [] myArray = arrayFromConsole();
     }
 
     public static int[] arrayFromConsole(){

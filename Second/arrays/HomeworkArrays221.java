@@ -1,13 +1,13 @@
-package Homework2.arrays;
+package homeworkJava.Second.arrays;
 
 import java.util.Scanner;
 
-public class HomeworkArrays223 {
+public class HomeworkArrays221 {
     public static void main(String[] args) {
 
         int[] myArray = arrayFromConsole();
         for (int i : myArray) {
-            System.out.print(i + " ");
+            System.out.println(i);
 
         }
     }
@@ -22,15 +22,10 @@ public class HomeworkArrays223 {
             System.out.println("Введите " + i + "-ый компонет массива newArray");
             newArray[i] = input.nextInt();
         }
-        System.out.println();
-        int j = newArray.length-1;
-        while (j >= 0) {
-            System.out.print(newArray [j]  + " ");
-            j--;
+        for (int v : newArray) {
+            System.out.print(v + " ");
         }
-
+        //System.out.print(Arrays.toString(newArray));
         return newArray;
     }
-
 }
-

@@ -1,8 +1,8 @@
-package Homework2.loop;
+package homeworkJava.Second.loop;
 
 import java.util.Scanner;
 // добавить комменты
-public class loopsHW112 {
+public class LoopsHW112 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Input any positive number:");
