@@ -1,11 +1,11 @@
 package homeworkJava.Third;
 
-public class CalculatorWithCounterInterface{
+public class CalculatorWithCounterDecorator implements ICalculator {
     private long counter = 0;
 
       private final ICalculator calculator;
 
-    public CalculatorWithCounterInterface(ICalculator calculator ){
+    public CalculatorWithCounterDecorator(ICalculator calculator ){
         this.calculator = calculator;
     }
 

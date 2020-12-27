@@ -5,16 +5,13 @@ public class CalculatorWithMathCopy implements ICalculator{
         return firstNumber + secondNumber;
     }
 
-
     public double subtraction(double firstNumber, double secondNumber) {
         return firstNumber - secondNumber;
     }
 
-
     public double multiplication(double firstNumber, double secondNumber) {
         return firstNumber * secondNumber;
     }
-
 
     public double divide(double firstNumber, double secondNumber){
         return firstNumber / secondNumber;
@@ -24,10 +21,8 @@ public class CalculatorWithMathCopy implements ICalculator{
         return Math.pow(number,stepen);
     }
 
-
     public double modulo(double number){
         return Math.abs(number);
-
     }
 
     public double sqrtNumber(double number){

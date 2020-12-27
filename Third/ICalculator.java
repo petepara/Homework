@@ -1,17 +1,17 @@
 package homeworkJava.Third;
 
 public interface ICalculator {
-    public double addition(double firstNumber, double secondNumber) ;
+     double addition(double firstNumber, double secondNumber) ;
 
-    public double subtraction(double firstNumber, double secondNumber) ;
+     double subtraction(double firstNumber, double secondNumber) ;
 
-    public double multiplication(double firstNumber, double secondNumber) ;
+     double multiplication(double firstNumber, double secondNumber) ;
 
-    public double divide(double firstNumber, double secondNumber);
+     double divide(double firstNumber, double secondNumber);
 
-    public double elevation(double number, int stepen) ;
+     double elevation(double number, int stepen) ;
 
-    public  double modulo(double number);
+     double modulo(double number);
 
-    public double sqrtNumber(double number) ;
+     double sqrtNumber(double number) ;
 }

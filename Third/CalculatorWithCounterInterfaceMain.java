@@ -1,8 +1,8 @@
 package homeworkJava.Third;
 
-public class CalculatorWithCounterMain {
+public class CalculatorWithCounterInterfaceMain {
     public static void main(String[] args) {
-         CalculatorWithCounter calcWC = new CalculatorWithCounter(new CalculatorWithOperator());
+         CalculatorWithCounterInterface calcWC = new CalculatorWithCounterInterface(new CalculatorWithOperator());
 
         // 4.1 + 15 * 7 + (28 / 5) ^ 2
         double a = 4.1, result;
@@ -24,6 +24,10 @@ public class CalculatorWithCounterMain {
         result = calcWC.addition(calcWC.addition(a,multi), f2);
         System.out.println(a + " + " + multi + " + " + f2 + " = " + result);
         System.out.println("Калькулятором воспользовались " + calcWC.getCountOperation() + " раз");
+
+
+
+        CalculatorWithCounterDecorator calc = new CalculatorWithCounterDecorator(new CalculatorWithOperator());
 
     }
 }

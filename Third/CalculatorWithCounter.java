@@ -1,117 +1,120 @@
 package homeworkJava.Third;
 
 public class CalculatorWithCounter {
-    private static long counter = 0;
+    private long counter = 0;
 
-    CalculatorWithOperator calcWO;
-    CalculatorWithMathCopy calcWMC;
-    CalculatorWithMathExtends calcWME;
+    private final CalculatorWithOperator calcWO;
+    private final CalculatorWithMathCopy calcWMC;
+    private final CalculatorWithMathExtends calcWME;
 
     public CalculatorWithCounter(CalculatorWithOperator calcWO) {
         this.calcWO = calcWO;
-
+        this.calcWMC = null;
+        this.calcWME = null;
     }
 
     public CalculatorWithCounter(CalculatorWithMathCopy calcWMC){
+        this.calcWO = null;
         this.calcWMC = calcWMC;
-
+        this.calcWME = null;
     }
-    public CalculatorWithCounter(CalculatorWithMathExtends calcWME){
-        this.calcWME = calcWME;
 
+    public CalculatorWithCounter(CalculatorWithMathExtends calcWME){
+        this.calcWO = null;
+        this.calcWMC = null;
+        this.calcWME = calcWME;
     }
 
     public double addition(double firstNumber, double secondNumber) {
-        counter++;
-        if(calcWO!=null) {
-            return calcWO.addition(firstNumber, secondNumber);
-        }else if (calcWMC!=null){
-            return calcWMC.addition(firstNumber, secondNumber);
+        this.counter++;
+        if(this.calcWO!=null) {
+            return this.calcWO.addition(firstNumber, secondNumber);
+        }else if (this.calcWMC!=null){
+            return this.calcWMC.addition(firstNumber, secondNumber);
         }
         else{
-            return calcWME.addition(firstNumber, secondNumber);
+            return this.calcWME.addition(firstNumber, secondNumber);
         }
     }
 
 
     public double subtraction(double firstNumber, double secondNumber) {
-        counter++;
-        if(calcWO!=null) {
-            return calcWO.subtraction(firstNumber, secondNumber);
-        }else if (calcWMC!=null){
-            return calcWMC.subtraction(firstNumber, secondNumber);
+        this.counter++;
+        if(this.calcWO!=null) {
+            return this.calcWO.subtraction(firstNumber, secondNumber);
+        }else if (this.calcWMC!=null){
+            return this.calcWMC.subtraction(firstNumber, secondNumber);
         }
         else{
-            return calcWME.subtraction(firstNumber, secondNumber);
+            return this.calcWME.subtraction(firstNumber, secondNumber);
         }
     }
 
 
     public double multiplication(double firstNumber, double secondNumber) {
-        counter++;
-        if(calcWO!=null) {
-            return calcWO.multiplication(firstNumber, secondNumber);
-        }else if (calcWMC!=null){
-            return calcWMC.multiplication(firstNumber, secondNumber);
+        this.counter++;
+        if(this.calcWO!=null) {
+            return this.calcWO.multiplication(firstNumber, secondNumber);
+        }else if (this.calcWMC!=null){
+            return this.calcWMC.multiplication(firstNumber, secondNumber);
         }
         else{
-            return calcWME.multiplication(firstNumber, secondNumber);
+            return this.calcWME.multiplication(firstNumber, secondNumber);
         }
     }
 
 
     public double divide(double firstNumber, double secondNumber){
-        counter++;
-        if(calcWO!=null) {
-            return calcWO.divide(firstNumber, secondNumber);
-        }else if (calcWMC!=null){
-            return calcWMC.divide(firstNumber, secondNumber);
+        this.counter++;
+        if(this.calcWO!=null) {
+            return this.calcWO.divide(firstNumber, secondNumber);
+        }else if (this.calcWMC!=null){
+            return this.calcWMC.divide(firstNumber, secondNumber);
         }
         else{
-            return calcWME.divide(firstNumber, secondNumber);
+            return this.calcWME.divide(firstNumber, secondNumber);
         }
     }
 
     public double elevation(double number, int stepen) {
-        counter++;
-        if(calcWO!=null) {
-            return calcWO.elevation(number,stepen);
-        }else if (calcWMC!=null){
-            return calcWMC.elevation(number, stepen);
+        this.counter++;
+        if(this.calcWO!=null) {
+            return this.calcWO.elevation(number,stepen);
+        }else if (this.calcWMC!=null){
+            return this.calcWMC.elevation(number, stepen);
         }
         else{
-            return calcWME.elevation(number, stepen);
+            return this.calcWME.elevation(number, stepen);
         }
     }
 
 
     public  double modulo(double number){
-        counter++;
-        if(calcWO!=null) {
-            return calcWO.modulo(number);
-        }else if (calcWMC!=null){
-            return calcWMC.modulo(number);
+        this.counter++;
+        if(this.calcWO!=null) {
+            return this.calcWO.modulo(number);
+        }else if (this.calcWMC!=null){
+            return this.calcWMC.modulo(number);
         }
         else{
-            return calcWME.modulo(number);
+            return this.calcWME.modulo(number);
         }
     }
 
     public double sqrtNumber(double number) // на дробных числах зависает
     {
-        counter++;
-        if(calcWO!=null) {
-            return calcWO.sqrtNumber(number);
-        }else if (calcWMC!=null){
-            return calcWMC.sqrtNumber(number);
+        this.counter++;
+        if(this.calcWO!=null) {
+            return this.calcWO.sqrtNumber(number);
+        }else if (this.calcWMC!=null){
+            return this.calcWMC.sqrtNumber(number);
         }
         else{
-            return calcWME.sqrtNumber(number);
+            return this.calcWME.sqrtNumber(number);
         }
     }
 
-
-    public static long getCountOperation(){
+    public  long getCountOperation(){
 
        return counter;
     }

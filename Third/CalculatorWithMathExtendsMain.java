@@ -12,7 +12,7 @@ public class CalculatorWithMathExtendsMain {
         double f = calcWME.divide(q,c);
         System.out.println("28/5 = " + f);
 
-        //TODO:сделать округление правильное
+        //TODO:сделать округление красивое
 
         double f2 = calcWME.elevation(f,elev);
         System.out.println(f + " ^ 2 = " + f2);

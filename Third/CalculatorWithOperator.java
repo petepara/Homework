@@ -6,35 +6,30 @@ public class CalculatorWithOperator implements ICalculator{
         return firstNumber + secondNumber;
     }
 
-
     public double subtraction(double firstNumber, double secondNumber) {
         return firstNumber - secondNumber;
     }
-
 
     public double multiplication(double firstNumber, double secondNumber) {
         return firstNumber * secondNumber;
     }
 
-
     public double divide(double firstNumber, double secondNumber){
         return firstNumber / secondNumber;
     }
 
-
     public double elevation(double number, int stepen) {
-        double result = number;
-        for (int i = 1; i < stepen; i++) {
-            result = result * number;
+        double result = 1;
+        for (int i = 0; i < stepen; i++) {
+            result *= number;
         }
         return result;
     }
 
-
     public  double modulo(double number){
         double numberModul = number;
         if(numberModul<0){
-            numberModul = numberModul* -1;
+            numberModul *=-1;
         }
         return numberModul;
     }

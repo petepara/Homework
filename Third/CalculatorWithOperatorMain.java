@@ -12,7 +12,7 @@ public class CalculatorWithOperatorMain {
         double f = calcWMO.divide(q , c);
         System.out.println("28/5 = " + f);
 
-       //TODO:сделать округление правильное
+       //TODO:сделать округление красивое
 
         double f2 = calcWMO.elevation(f,elev);
         System.out.println(f + " ^ 2 = " + f2);
@@ -21,7 +21,7 @@ public class CalculatorWithOperatorMain {
         System.out.println("15 * 7 = " + multi);
 
         result = calcWMO.addition(calcWMO.addition(a,multi), f2);
-       System.out.println(a + " + " + multi + " + " + f2 + " = " + result);
+        System.out.println(a + " + " + multi + " + " + f2 + " = " + result);
 
     }
 }
