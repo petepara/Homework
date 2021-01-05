@@ -1,6 +1,6 @@
 package homeworkJava.Third;
 
-public class CalculatorWithMemoryMain {
+public class CalculatorWithMemoryMain7 {
     public static void main(String[] args) {
         // 4.1 + 15 * 7 + (28 / 5) ^ 2
         //В мэйне запрещается использование переменных для хранения значений участвующих в просчёте, а также результатов работы методов калькулятора
@@ -9,16 +9,16 @@ public class CalculatorWithMemoryMain {
       //  int elev = 2;
 
 
-       CalculatorWithMemory calcWMO = new CalculatorWithMemory(new CalculatorWithMathCopy());
+       CalculatorWithMemory7 calcWMO = new CalculatorWithMemory7(new CalculatorWithMathCopy3());
 
-        CalculatorWithMemory.putInMemory(calcWMO.divide(28,5));
+        CalculatorWithMemory7.putInMemory(calcWMO.divide(28,5));
 
-        CalculatorWithMemory.putInMemory(calcWMO.elevation(CalculatorWithMemory.getFromMemory(),2));
+        CalculatorWithMemory7.putInMemory(calcWMO.elevation(CalculatorWithMemory7.getFromMemory(),2));
 
-        CalculatorWithMemory.putInMemory(calcWMO.addition(CalculatorWithMemory.getFromMemory(),calcWMO.multiplication(15,7)));
+        CalculatorWithMemory7.putInMemory(calcWMO.addition(CalculatorWithMemory7.getFromMemory(),calcWMO.multiplication(15,7)));
 
-        CalculatorWithMemory.putInMemory(calcWMO.addition(CalculatorWithMemory.getFromMemory(),4.1));
-        System.out.println("4.1 + 15 * 7 + (28 / 5) ^ 2 = " + CalculatorWithMemory.getFromMemory());
+        CalculatorWithMemory7.putInMemory(calcWMO.addition(CalculatorWithMemory7.getFromMemory(),4.1));
+        System.out.println("4.1 + 15 * 7 + (28 / 5) ^ 2 = " + CalculatorWithMemory7.getFromMemory());
       //  CalculatorWithMemory.putInMemory();
 
        // double f = calcWMO.divide(q , c);

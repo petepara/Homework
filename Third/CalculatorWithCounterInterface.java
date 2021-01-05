@@ -3,9 +3,9 @@ package homeworkJava.Third;
 public class CalculatorWithCounterInterface{
     private long counter = 0;
 
-      private final ICalculator calculator;
+      private final ICalculator6 calculator;
 
-    public CalculatorWithCounterInterface(ICalculator calculator ){
+    public CalculatorWithCounterInterface(ICalculator6 calculator ){
         this.calculator = calculator;
     }
 

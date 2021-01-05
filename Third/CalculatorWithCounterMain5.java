@@ -1,8 +1,8 @@
 package homeworkJava.Third;
 
-public class CalculatorWithCounterMain {
+public class CalculatorWithCounterMain5 {
     public static void main(String[] args) {
-         CalculatorWithCounter calcWC = new CalculatorWithCounter(new CalculatorWithOperator());
+         CalculatorWithCounter5 calcWC = new CalculatorWithCounter5(new CalculatorWithOperator2());
 
         // 4.1 + 15 * 7 + (28 / 5) ^ 2
         double a = 4.1, result;

@@ -1,6 +1,6 @@
 package homeworkJava.Third;
 
-public interface ICalculator {
+public interface ICalculator6 {
      double addition(double firstNumber, double secondNumber) ;
 
      double subtraction(double firstNumber, double secondNumber) ;

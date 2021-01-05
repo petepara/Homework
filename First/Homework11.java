@@ -6,19 +6,26 @@ public class Homework11 {
         int b = 15; // 00001111
         int c;
         System.out.println(a);
+
         System.out.println(b);
+
         System.out.println(~a); // 11010101 = 10101010 = -43
+
         System.out.println(~b); // 11110000 = 10001111 = -16
+
         System.out.println(a & b); // 00101010
-        // 00001111
-        // 00001010 = 10
+                                   // 00001111
+                                   // 00001010 = 10
         c = a & b;
         System.out.println(c);
-        System.out.println(a | b); // 00101010
-        //  00001111
-        //  00101111 = 47
+
+        System.out.println(a | b);  // 00101010
+                                    // 00001111
+                                    // 00101111 = 47
+
         c = a | b;
         System.out.println(c);
+
         System.out.println(a ^ b);  // 00101010
                                     // 00001111
                                     // 00100101 = 37

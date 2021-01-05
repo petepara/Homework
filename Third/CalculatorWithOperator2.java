@@ -1,6 +1,6 @@
 package homeworkJava.Third;
 
-public class CalculatorWithOperator implements ICalculator{
+public class CalculatorWithOperator2 implements ICalculator6 {
 
     public double addition(double firstNumber, double secondNumber) {
         return firstNumber + secondNumber;

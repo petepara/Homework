@@ -8,7 +8,6 @@ public class HomeworkArrays223 {
         int[] myArray = arrayFromConsole();
         for (int i : myArray) {
             System.out.print(i + " ");
-
         }
     }
 
@@ -28,7 +27,6 @@ public class HomeworkArrays223 {
             System.out.print(newArray [j]  + " ");
             j--;
         }
-
         return newArray;
     }
 

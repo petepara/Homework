@@ -1,25 +1,25 @@
 package homeworkJava.Third;
 
-public class CalculatorWithCounter {
+public class CalculatorWithCounter5 {
     private long counter = 0;
 
-    private final CalculatorWithOperator calcWO;
-    private final CalculatorWithMathCopy calcWMC;
-    private final CalculatorWithMathExtends calcWME;
+    private final CalculatorWithOperator2 calcWO;
+    private final CalculatorWithMathCopy3 calcWMC;
+    private final CalculatorWithMathExtends4 calcWME;
 
-    public CalculatorWithCounter(CalculatorWithOperator calcWO) {
+    public CalculatorWithCounter5(CalculatorWithOperator2 calcWO) {
         this.calcWO = calcWO;
         this.calcWMC = null;
         this.calcWME = null;
     }
 
-    public CalculatorWithCounter(CalculatorWithMathCopy calcWMC){
+    public CalculatorWithCounter5(CalculatorWithMathCopy3 calcWMC){
         this.calcWO = null;
         this.calcWMC = calcWMC;
         this.calcWME = null;
     }
 
-    public CalculatorWithCounter(CalculatorWithMathExtends calcWME){
+    public CalculatorWithCounter5(CalculatorWithMathExtends4 calcWME){
         this.calcWO = null;
         this.calcWMC = null;
         this.calcWME = calcWME;

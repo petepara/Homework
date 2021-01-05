@@ -11,8 +11,6 @@ public class HomeworkArrays241 {
         System.out.print("Input max value in array: ");
         int maxValue = input.nextInt();
         arrayRandom(size, maxValue);
-
-
     }
 
     public static int[] arrayRandom(int size, int maxValueExclusion) {
@@ -76,12 +74,11 @@ public class HomeworkArrays241 {
                         minB = minA;
                         minA = array[i];
                     }
-
                 }
-
             }
             System.out.println("Два минимальных значения массива: " + minA + " , " + minB);
         }
+
     public static int[] delNumbersFromInterval(int [] array){
         int a = 5;
         int b = 9;
@@ -97,6 +94,8 @@ public class HomeworkArrays241 {
         }
         return B;
     }
+
+
     public static int getSumOfArrayDigits(int [] array){
 
         int sumDigits = 0;

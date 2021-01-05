@@ -8,7 +8,6 @@ public class HomeworkArrays222 {
         int[] myArray = arrayFromConsole();
         for (int i : myArray) {
             System.out.print(i + " ");
-
         }
     }
 
@@ -25,7 +24,6 @@ public class HomeworkArrays222 {
         System.out.println("Каждый 2-й элемент массива newArray");
         for (int i = 1; i < newArray.length;i+=2 ) {
             System.out.print(newArray [i] + " ");
-
         }
         System.out.println(" ");
         return newArray;

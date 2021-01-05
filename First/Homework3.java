@@ -14,7 +14,7 @@ public class Homework3 {
             System.out.println("You entered wrong number. Enter day of the week(1-7):");// то будет выводиться данное сообщение
             day = in.nextInt();                                                         // и будет необходимо ввести значение снова
         }
-       boolean weekday = day >= 1 && day < 6 ? true : false; // присваиваем значение типа boolean для определения будний это день или нет
+        boolean weekday = day >= 1 && day < 6 ? true : false; // присваиваем значение типа boolean для определения будний это день или нет
 
         System.out.println("Are you on vacation?(1-yes;2-no):");
         int onVacation = in.nextInt(); // Определяем в отпуске или нет

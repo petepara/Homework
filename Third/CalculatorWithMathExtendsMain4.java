@@ -1,6 +1,6 @@
 package homeworkJava.Third;
 
-public class CalculatorWithMathExtendsMain {
+public class CalculatorWithMathExtendsMain4 {
     public static void main(String[] args) {
 
         double a = 4.1, result;
@@ -8,7 +8,7 @@ public class CalculatorWithMathExtendsMain {
         int elev = 2;
 
 
-        CalculatorWithMathExtends calcWME = new CalculatorWithMathExtends();
+        CalculatorWithMathExtends4 calcWME = new CalculatorWithMathExtends4();
         double f = calcWME.divide(q,c);
         System.out.println("28/5 = " + f);
 

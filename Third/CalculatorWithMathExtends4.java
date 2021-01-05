@@ -1,6 +1,6 @@
 package homeworkJava.Third;
 
-public class CalculatorWithMathExtends extends CalculatorWithOperator implements ICalculator{
+public class CalculatorWithMathExtends4 extends CalculatorWithOperator2 implements ICalculator6 {
     @Override
     public double elevation(double number, int stepen) {
         return Math.pow(number,stepen);

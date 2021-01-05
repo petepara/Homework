@@ -6,14 +6,19 @@ public class Homework12 {
         byte b = (byte)0b11110001; // 00001111 = 11110000 = 11110001
         int c;
         System.out.println(a);
+
         System.out.println(b);
+
         System.out.println(~a); // 11010110 = 00101001 = 41
+
         System.out.println(~b); // 11110001 = 00001110 = 14
+
         System.out.println(a & b); // 11010110
                                    // 11110001
                                    // =11010000
         c = a & b;
         System.out.println(c);
+
         System.out.println(a | b);  // 11010110
                                     // 11110001
                                     // =11110111

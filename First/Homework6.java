@@ -27,7 +27,7 @@ public class Homework6 {
      * @throws ParseException
      */
     public static String createPhoneNumber(int[] numbersArray) throws ParseException {
-        String phoneNumber = "";
+      /*  String phoneNumber = "";
         for (int value : numbersArray) {
             phoneNumber = String.format("%s%s", phoneNumber, value);
         }
@@ -36,6 +36,8 @@ public class Homework6 {
         maskFormatter.setValueContainsLiteralCharacters(false);
         phoneNumber = maskFormatter.valueToString(phoneNumber);
         System.out.println();
-        return phoneNumber;
+        return phoneNumber;*/
+        return String.format("(%d%d%d) %d%d%d-%d%d%d%d",numbersArray[0], numbersArray[1], numbersArray[2],numbersArray[3],
+                numbersArray[4], numbersArray[5], numbersArray[6], numbersArray[7], numbersArray[8], numbersArray[9]);
         }
 }

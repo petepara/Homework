@@ -2,7 +2,7 @@ package homeworkJava.Third;
 
 public class CalculatorWithCounterInterfaceMain {
     public static void main(String[] args) {
-         CalculatorWithCounterInterface calcWC = new CalculatorWithCounterInterface(new CalculatorWithOperator());
+         CalculatorWithCounterInterface calcWC = new CalculatorWithCounterInterface(new CalculatorWithOperator2());
 
         // 4.1 + 15 * 7 + (28 / 5) ^ 2
         double a = 4.1, result;
@@ -27,7 +27,7 @@ public class CalculatorWithCounterInterfaceMain {
 
 
 
-        CalculatorWithCounterDecorator calc = new CalculatorWithCounterDecorator(new CalculatorWithOperator());
+
 
     }
 }

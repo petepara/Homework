@@ -1,6 +1,6 @@
 package homeworkJava.Third;
 
-public class CalculatorWithMathCopy implements ICalculator{
+public class CalculatorWithMathCopy3 implements ICalculator6 {
     public double addition(double firstNumber, double secondNumber) {
         return firstNumber + secondNumber;
     }

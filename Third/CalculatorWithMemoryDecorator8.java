@@ -1,15 +1,13 @@
 package homeworkJava.Third;
 
-import java.sql.SQLOutput;
+public class CalculatorWithMemoryDecorator8 implements ICalculator6{
 
-public class CalculatorWithMemory {
-
-    ICalculator calculator;
+    private final ICalculator6 calculator;
 
     public static double toMemory = 0;
     public static boolean isTaken = false;
 
-    public CalculatorWithMemory(ICalculator calculator ){
+    public CalculatorWithMemoryDecorator8(ICalculator6 calculator ){
         this.calculator = calculator;
 
     }
@@ -77,5 +75,9 @@ public class CalculatorWithMemory {
             return toMemory;
         }
 
+
+    }
+    public ICalculator6 getCalculator(){
+        return calculator;
     }
 }

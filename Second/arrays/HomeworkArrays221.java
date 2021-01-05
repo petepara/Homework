@@ -8,7 +8,6 @@ public class HomeworkArrays221 {
         int[] myArray = arrayFromConsole();
         for (int i : myArray) {
             System.out.println(i);
-
         }
     }
 

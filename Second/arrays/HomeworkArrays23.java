@@ -11,10 +11,8 @@ public class HomeworkArrays23 {
         System.out.print("Input max value in array: ");
         int maxValue = input.nextInt();
         arrayRandom(size, maxValue);
-
-
-
     }
+
     public static int[] arrayRandom(int size, int maxValueExclusion){
         Random rand = new Random();
         int[]newArray = new int [size];
