@@ -8,12 +8,7 @@ import java.nio.file.Paths;
 import java.util.*;
 
 public class SetHM21 {
-    public static void main(String[] args) throws IOException {
 
-        String fileName = "C:\\Курсы\\Война и мир_книга.txt";
-
-        convertTextToSet(convertStringToArray(deletePuncMarks(fileName)));
-    }
 
     public static String readUsingFiles(String file) throws IOException {
         return new String(Files.readAllBytes(Paths.get(file)));
