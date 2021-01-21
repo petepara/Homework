@@ -12,24 +12,28 @@ public class SetHM21 {
 
         String fileName = "C:\\Курсы\\Война и мир_книга.txt";
 
-        convertTextToSet(deletePuncMarks(fileName));
+        convertTextToSet(convertStringToArray(deletePuncMarks(fileName)));
     }
 
     public static String readUsingFiles(String file) throws IOException {
         return new String(Files.readAllBytes(Paths.get(file)));
     }
 
-    public static String[] deletePuncMarks (String fileName) throws IOException {
+    public static String deletePuncMarks (String fileName) throws IOException {
         String text = readUsingFiles(fileName);
         text = text.replaceAll("\\s+-|\\s+-\\s+|-\\s+", " ");
         text = text.replaceAll("[^\\da-zA-Zа-яёА-ЯЁ0-9-]", " ");
+        return text;
+    }
+
+    public static String[] convertStringToArray(String text){
         String [] S = text.split("[\\s,.!?]+");
         return S;
     }
 
-    private static Set<String> convertTextToSet(String[] stringArray) throws IOException {
+    public static Set<String> convertTextToSet(String[] stringArray) throws IOException {
         Set<String> words = new HashSet<>(Arrays.asList(stringArray));
-        System.out.println("Всего использовано " + words.size() + " слов");
+        System.out.println("Всего использовано " + words.size() + "уникальных слов");
         return words;
     }
 }
