@@ -24,7 +24,7 @@ public class EasySearch implements ISearchEngine {
 
         }
 
-        System.out.println("Amount of using word \"" + word + "\" = "  + count);
+        System.out.println("The word \"" + word + "\" was used "  + count + " times");
 
         return count;
     }
