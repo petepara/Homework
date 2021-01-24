@@ -29,7 +29,7 @@ public class SetHM21 {
      */
     public static String deletePuncMarks (String fileName) throws IOException {
         String text = readUsingFiles(fileName);
-        text = text.replaceAll("\\s+-|\\s+-\\s+|-\\s+", " ");
+        text = text.replaceAll("\s+-|\s+-\s+|-\s+", " ");
         text = text.replaceAll("[^\\da-zA-Zа-яёА-ЯЁ0-9-]", " ");
         return text;
     }

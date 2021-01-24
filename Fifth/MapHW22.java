@@ -17,8 +17,7 @@ public class MapHW22 {
                 wordsByAmount.put(str, 1);
             }
         }
-        System.out.println(wordsByAmount);
-        System.out.println();
+
         return wordsByAmount;
     }
     public static Map <String, Integer> sortByValue(Map<String, Integer> unsortMap) {
