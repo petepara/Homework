@@ -1,5 +1,7 @@
 package homeworkJava.SiteLoader;
 
+import java.time.LocalDate;
+
 /**
  * Загрузчик курса с сайта Нац. Банка
  */
@@ -11,7 +13,7 @@ public class ALPHALoader extends SiteLoader{
      * @return курс который мы нашли
      */
     @Override
-    public double load(Currency currencyName) {
+    public double load(Currency currencyName, LocalDate localDate) {
         return load("https://developerhub.alfabank.by:8273/partner/1.0.0/public/rates", currencyName);
     }
 

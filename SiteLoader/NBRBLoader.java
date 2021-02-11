@@ -1,5 +1,7 @@
 package homeworkJava.SiteLoader;
 
+import java.time.LocalDate;
+
 /**
  * Загрузчик курса с сайта Нац. Банка
  */
@@ -11,8 +13,8 @@ public class NBRBLoader extends SiteLoader{
      * @return курс который мы нашли
      */
     @Override
-    public double load(SiteLoader.Currency currencyName) {
-        return load("https://www.nbrb.by/api/exrates/rates/" + currencyName.getId(), currencyName);
+    public double load(SiteLoader.Currency currencyName, LocalDate localDate) {
+        return load("https://www.nbrb.by/api/exrates/rates/" + currencyName.getId()+"?ondate="+localDate, currencyName);
     }
 
     /**

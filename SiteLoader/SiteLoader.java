@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
+import java.time.LocalDate;
 
 /**
  * Реализация загрузчика сайтов
@@ -71,7 +72,7 @@ public abstract class SiteLoader {
         return handle(content.toString(), currencyName);
     }
 
-    public abstract double load(SiteLoader.Currency currencyName);
+    public abstract double load(SiteLoader.Currency currencyName, LocalDate localDate);
 
     /**
      * Метод который будет дёрнут после успешной загрузки сайта
