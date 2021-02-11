@@ -6,6 +6,7 @@ import java.time.LocalDate;
  * Загрузчик курса с сайта Нац. Банка
  */
 public class NBRBLoader extends SiteLoader{
+    int firstIndexToMinus=8, secondIndexToMinus = 2;
 
     /**
      * Метод для запуска загрузки курса валют
@@ -25,6 +26,6 @@ public class NBRBLoader extends SiteLoader{
      */
     @Override
     protected double handle(String content, SiteLoader.Currency currencyName) {
-           return Double.parseDouble(content.substring(content.length()-8, content.length()-2));
+           return Double.parseDouble(content.substring(content.length()-firstIndexToMinus, content.length()-secondIndexToMinus));
     }
 }
