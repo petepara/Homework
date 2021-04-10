@@ -6,16 +6,15 @@ import java.util.Scanner;
 public class LoopsHW12 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Input any number:");
+        System.out.println("Введите любое целое число:");
         String enteredNumberS = input.nextLine();
-        while (!enteredNumberS.contains(".") || enteredNumberS.contains(",")) {
+        while (enteredNumberS.contains(".") || enteredNumberS.contains(",")|| !enteredNumberS.matches("[0-9]+")) {
             System.out.println("Необходимо ввести целое число! Попробуй ещё раз:");
             enteredNumberS = input.nextLine ();
         }
         int enteredNumber = Integer.parseInt(enteredNumberS);
         numbersMultiply(enteredNumber);
-        System.out.print("\nВы ввели число: " + enteredNumber + "!");
-
+        System.out.print("\nВы ввели число " + enteredNumber + "!");
    }
 
     static int numbersMultiply(int  n) {
@@ -28,9 +27,8 @@ public class LoopsHW12 {
             remainder = n % 10;
             multiply = multiply * remainder;
             n /= 10;
-
         }
-        System.out.println("\n Произведение цифр введённого числа: " );
+        System.out.println("\nПроизведение цифр введённого числа: " );
         for (int i = 0; i < resultToPrint.length-1; i++){
             System.out.print(resultToPrint[i] + "*");
         }

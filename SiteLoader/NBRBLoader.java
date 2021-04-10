@@ -14,8 +14,8 @@ public class NBRBLoader extends SiteLoader{
      * @return курс который мы нашли
      */
     @Override
-    public double load(SiteLoader.Currency currencyName, LocalDate localDate) {
-        return load("https://www.nbrb.by/api/exrates/rates/" + currencyName.getId()+"?ondate="+localDate, currencyName);
+    public double load(SiteLoader.Currency currencyName) {
+        return load("https://www.nbrb.by/api/exrates/rates/" + currencyName.getId()+"?ondate=", currencyName);
     }
 
     /**

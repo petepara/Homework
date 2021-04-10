@@ -1,7 +1,7 @@
 package homeworkJava.Second.loop;
 
 import java.util.Scanner;
-// добавить комменты
+
 public class LoopsHW112 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);

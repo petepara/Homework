@@ -14,7 +14,7 @@ public class Homework3 {
             System.out.println("You entered wrong number. Enter day of the week(1-7):");// то будет выводиться данное сообщение
             day = in.nextInt();                                                         // и будет необходимо ввести значение снова
         }
-        boolean weekday = day >= 1 && day < 6 ? true : false; // присваиваем значение типа boolean для определения будний это день или нет
+        boolean weekday = day >= 1 && day < 6; // присваиваем значение типа boolean для определения будний это день или нет
 
         System.out.println("Are you on vacation?(1-yes;2-no):");
         int onVacation = in.nextInt(); // Определяем в отпуске или нет
@@ -23,7 +23,7 @@ public class Homework3 {
             System.out.println("You entered wrong number. Enter 1 - yes or 2 - no:");
             onVacation = in.nextInt();
         }
-        boolean vacation = onVacation == 1 ? true : false;
+        boolean vacation = onVacation == 1;
 
         boolean toSleepOrNot = sleepIn(weekday, vacation);      //если метод sleepIn вернул true, то можно спать
         if (toSleepOrNot) {
@@ -42,12 +42,7 @@ public class Homework3 {
      *          иначе возвращает false.
      */
     public static boolean sleepIn(boolean weekday, boolean vacation) {
-        if (!weekday || vacation) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return !weekday || vacation;
     }
 }
 

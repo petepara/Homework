@@ -13,7 +13,6 @@ public class LoopsHW13 {
         int rankOfElevation;
         int numberToElevate;
         double numberToElevateD;
-
         while (!isDigit(rankOfElevationS) || rankOfElevationS.contains(".") || rankOfElevationS.contains(",")||rankOfElevationS.contains("-")) {
         System.out.println("Степень должна быть целым и положительным числом! Попробуй ещё раз:");
         rankOfElevationS = input.nextLine ();
@@ -27,8 +26,6 @@ public class LoopsHW13 {
             numberToElevate = Integer.parseInt(numberToElevateS);
             System.out.println(pow(numberToElevate, rankOfElevation));
         }
-
-
    }
     public static int pow(int value, int powValue) {
         int result = 1;

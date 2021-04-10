@@ -54,18 +54,6 @@ public class DataContainer <T> {
             }
         } while (swap);
     }
-//    public static void sort(int[] arr){
-//        boolean swap;
-//        do {
-//            swap = false;
-//            for (int i = 0; i < arr.length-1; i++) {
-//                if (arr[i] > arr[i + 1]){
-//                    //
-//                    swap = true;
-//                }
-//            }
-//        } while (swap);
-//    }
 
     private static <T> void swap(T[] arr, int from, int to){
         T temp = arr[from];
@@ -90,19 +78,17 @@ public class DataContainer <T> {
         return  this.data.length - 1;
     }
 
-
-
     public T get(int index){
-        if(index>(  this.data.length-1)||index<0){
+        if(index>(this.data.length-1)||index<0){
             return null;
         }
         else {
-            return   this.data[index];
+            return this.data[index];
         }
     }
 
     public T [] getItems(){
-        return   this.data;
+        return  this.data;
     }
 
     public boolean delete(int index){
@@ -111,16 +97,14 @@ public class DataContainer <T> {
             return false;
         }
         for (int i = index; i <   this.data.length-1; i++) {
-            this.data[i] =   this.data[i+1];
+            this.data[i] = this.data[i+1];
         }
         this.data = Arrays.copyOf(data,   this.data.length -1);
         return true;
     }
 
     public boolean delete(T item){
-
         boolean isMatch = false;
-
         for (int k = 0; k <   this.data.length; k++) {
             if (Objects.equals(  this.data[k],item)){
                 isMatch = true;
@@ -134,16 +118,16 @@ public class DataContainer <T> {
     }
 
      public String toString(){
-         StringBuilder builder = new StringBuilder();
-         builder.append("[");
+        StringBuilder builder = new StringBuilder();
+        builder.append("[");
         for (T item : this.data){
             if(item!=null){
                 builder.append(item).append(",");
             }
         }
-         builder.deleteCharAt(builder.length()-1);
-         builder.append("]");
-         return  builder.toString();
+        builder.deleteCharAt(builder.length()-1);
+        builder.append("]");
+        return  builder.toString();
      }
 
 }
